@@ -1,0 +1,80 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* New layout and visual tweaks */
+.hero-card {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+  background: #23272f;
+}
+.hero-card .card-img {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(0.55);
+}
+.hero-content {
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.clickable { cursor: pointer; }
+
+.card.p-4 { 
+  background: transparent !important;
+  color: #f3f3f3;
+  border: 1px solid #23272f;
+  border-radius: .5rem; 
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18); 
+}
+
+.accordion .accordion-button { 
+  background: #23272f !important;
+  color: #fff !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #23272f !important;
+  color: #00baff !important;
+}
+
+.accordion-body {
+  background: transparent !important;
+  color: #f3f3f3;
+}
+
+footer { 
+  background: #23272f !important;
+  color: #bfc9d1 !important;
+  border-top: 1px solid rgba(255,255,255,0.04); 
+}
+
+body {
+  background: #181c23;
+  color: #f3f3f3;
+}
+
+.container, .container-fluid, .accordion {
+  background: transparent !important;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand span {
+  color: #fff !important;
+}
+
+img {
+  background: #23272f;
+}
+
+@media (max-width: 576px) {
+  .hero-card { height: 220px; }
+  .hero-content h1 { font-size: 1.5rem; }
+}
